@@ -28,16 +28,8 @@ const App = () => {
     <div className={styles.app}>
       <Router> 
         <Header/>
-        {/* {sidebarActive ? 
-          <>
-            <Sidebar/>
-          </>
-          :
-          <>
-          </>
-        } */}
         <Routes className="Routes"> 
-            <Route path ="/" element={<Home />} /> 
+            <Route path ="/portfolio" element={<Home />} /> 
             <Route path ="/history" element={
               <HistoryProvider>
                 <History />
