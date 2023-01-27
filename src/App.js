@@ -1,12 +1,10 @@
 import React, {useState, useContext} from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./components/Home";
-import Sidebar from "./components/Sidebar";
 import History from "./components/history/History";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import arrow from "./images/arrow.png"
 import Header from "./components/Header";
 import ProjectProvider from "./context/ProjectContext";
 import HistoryProvider from "./context/HistoryContext";
