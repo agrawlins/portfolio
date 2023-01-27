@@ -1,23 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useContext} from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./components/Home";
+import Sidebar from "./components/Sidebar";
+import History from "./components/history/History";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import arrow from "./images/arrow.png"
+import Header from "./components/Header";
+import ProjectProvider from "./context/ProjectContext";
+import HistoryProvider from "./context/HistoryContext";
 
-function App() {
+const App = () => {
+
+  const [sidebarActive, setSidebarActive] = useState(true)
+
+  const toggleSidebar = () => {
+    setSidebarActive(!sidebarActive)
+  }
+ 
+  const styles = {
+    app: "h-screen flex flex-col font-serif bg-slate-700",
+    sidebarButton: "flex self-center",
+    arrowLeft: "-ml-12 max-h-24 rotate-180 opacity-95 invert",
+    arrowRight: "-ml-12 max-h-24 opacity-95 invert"
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <Router> 
+        <Header/>
+        {/* {sidebarActive ? 
+          <>
+            <Sidebar/>
+          </>
+          :
+          <>
+          </>
+        } */}
+        <Routes className="Routes"> 
+            <Route path ="/" element={<Home />} /> 
+            <Route path ="/history" element={
+              <HistoryProvider>
+                <History />
+              </HistoryProvider>
+            } />
+            <Route path ="/projects" element={
+              <ProjectProvider>
+                <Projects />
+              </ProjectProvider>
+            } /> 
+            <Route path ="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
+      <Footer />
     </div>
   );
 }
