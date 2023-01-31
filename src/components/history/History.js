@@ -32,15 +32,11 @@ const History = (props) => {
         return (
             <>
                 <h1 className={styles.h1}>Work History</h1>
-                { selectedCard === null ?
-                    <></>
-                :
-                    <div className={styles.display}>
-                        <h1 className={styles.displayTitle}>{selectedCard.title}</h1>
-                        <img className={styles.displayImage} src={selectedCard.image}></img> 
-                        <p className={styles.displayText}>{selectedCard.description}</p>
-                    </div>
-                }
+                <div className={styles.display}>
+                    <h1 className={styles.displayTitle}>{selectedCard.title}</h1>
+                    <img className={styles.displayImage} src={selectedCard.image}></img> 
+                    <p className={styles.displayText}>{selectedCard.description}</p>
+                </div>
                 <h1 className={styles.ulHeader}>CLICK ON A POSITION TO LEARN MORE</h1>
                 <div className={styles.history}>
                     <ul className={styles.ul}>

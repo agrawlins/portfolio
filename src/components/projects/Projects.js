@@ -33,16 +33,12 @@ const Projects = (props) => {
     return (
         <>
             <h1 className={styles.h1}>Project Portfolio</h1>
-            { selectedCard === null ?
-                <></>
-            :
-                <div className={styles.display}>
-                    <h1 className={styles.displayTitle}>{selectedCard.title}</h1>
-                    <img className={styles.displayImage} src={selectedCard.image}></img> 
-                    <p className={styles.displayText}>{selectedCard.description}</p>
-                    <a href={selectedCard.gitHub} target='blank' className={styles.displayLink}>View the Code on GitHub</a>
-                </div>
-            }
+            <div className={styles.display}>
+                <h1 className={styles.displayTitle}>{selectedCard.title}</h1>
+                <img className={styles.displayImage} src={selectedCard.image}></img> 
+                <p className={styles.displayText}>{selectedCard.description}</p>
+                <a href={selectedCard.gitHub} target='blank' className={styles.displayLink}>View the Code on GitHub</a>
+            </div>
             <h1 className={styles.ulHeader}>CLICK ON A PROJECT TO LEARN MORE</h1>
             <div className={styles.projects}>
                 <ul className={styles.ul}>

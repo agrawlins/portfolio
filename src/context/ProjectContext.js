@@ -1,4 +1,5 @@
 import React, {useContext, useState} from 'react'
+import downArrow from '../images/logos/downArrow.jpg'
 
 export const ProjectContext = React.createContext()
 
@@ -7,7 +8,7 @@ const ProjectProvider = (props) => {
         title: null,
         description: null,
         gitHub: null,
-        image: null
+        image: downArrow
     })
 
     const {} = props

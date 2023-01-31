@@ -13,7 +13,7 @@ const Contact = () => {
         header: "flex flex-col items-center",
         h1: "p-2 mb-5 w-full text-3xl flex justify-center bg-gradient-to-t from-slate-900 to-slate-500",
         h2: "flex justify-center text-6xl",
-        mugshot: " my-5 h-1/3 w-1/3 object-scale-down rounded-3xl opacity-75",
+        mugshot: " my-5 h-1/3 w-1/3 flex self-center shadow-lg shadow-black object-scale-down rounded-3xl opacity-75",
         button: "m-5 h-24 w-24 bg-slate-200 shadow-lg shadow-black rounded-full hover:ring ring-offset-2 ring-slate-400",
         links: "p-3 flex justify-center",
         img: " p-1 h-full w-full object-scale-down rounded-full",
@@ -64,7 +64,7 @@ const Contact = () => {
                         </button>
                     </a>
             </div>
-                <h3><a href="https://agrawlins.github.io" target='blank' className={styles.oldie}>CHECK OUT THE ORIGINAL PAGE</a></h3>
+            {/* <h3><a href="https://agrawlins.github.io" target='blank' className={styles.oldie}>CHECK OUT THE ORIGINAL PAGE</a></h3> */}
         </div>
     )
 }

@@ -5,8 +5,8 @@ const Home = () => {
     const styles = {
         home: "h-screen w-full flex flex-col items-center opacity-75 bg-slate-700 text-white",
         header: "mb-5 w-full text-3xl flex justify-center bg-gradient-to-t from-slate-900 to-slate-500",
-        content: "w-5/6 flex justify-center",
-        img: " h-full w-1/2 object-scale-down rounded-xl",
+        content: "p-0 w-5/6 flex justify-center",
+        img: "m-5 h-full w-1/2 flex self-center shadow-lg shadow-black rounded-xl",
         text: "p-5 h-full w-1/2 object-scale-down",
         h1: "pb-3 font-bold text-6xl",
         pHead: "py-3 text-lg font-bold",
@@ -39,7 +39,7 @@ const Home = () => {
                     </div>
                     <br/>
                     <p>
-                        If you'd like to get in touch, <a className={styles.link} href="/contact">Click Here</a>
+                        If you'd like to get in touch, <a className={styles.link} href="mailto:agrawlins@gmail.com">Click Here</a>
                     </p>
                 </div>
             </div>
