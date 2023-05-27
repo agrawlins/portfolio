@@ -28,7 +28,7 @@ const History = (props) => {
     ulHeader: "flex justify-center text-white",
     ul: "flex flex-col",
     display:
-      "m-5 p-5 h-1/2 w-full text-white flex flex-col self-center shadow-lg shadow-black rounded-xl",
+      "my-5 p-5 h-1/2 w-full text-white flex flex-col items-center shadow-lg shadow-black rounded-xl",
     displayTitle: "flex self-center",
     displayImage:
       "m-5 h-48 w-48 flex self-center shadow-lg shadow-black rounded-xl",
