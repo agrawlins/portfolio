@@ -1,5 +1,13 @@
 const projectsData = [
     {
+        title: "LOCHMOND",
+        description: "An epic role-playing game in the making. Create and customize your character, and explore the magical lands and peoples of Lochmond!",
+        gitHub: "https://github.com/agrawlins/lochmond",
+        liveLink: "https://lochmond.onrender.com/",
+        image: "https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+ 
+    },
+    {
         title: "SCRIBJOT",
         description: "A simple journaling app that allows a user to quickly write down their thoughts and feelings, without the risk of carpal tunnel!",
         gitHub: "https://github.com/agrawlins/scribjot",
